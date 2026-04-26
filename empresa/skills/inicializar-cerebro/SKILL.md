@@ -73,7 +73,7 @@ bash empresa/skills/inicializar-cerebro/scripts/inicializar.sh \
 Pra o Claude conseguir **carregar os 3 cérebros juntos** quando abrir este, você precisa ter clonado os 3 lado a lado:
 
 ```
-~/brains/
+~/ffos/ffos-projects/brains/
 ├── acme-second-brain/          (cérebro do time — template-empresa clonado)
 ├── acme-diretoria/             (cérebro da diretoria — template-diretoria clonado)
 └── acme-amora/                 (este — pessoal)

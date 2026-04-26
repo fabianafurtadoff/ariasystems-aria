@@ -1,15 +1,15 @@
 ---
 name: cerebro
-description: Carrega em paralelo os CLAUDE.md dos cérebros disponíveis em `~/brains/` (pessoal, time, diretoria). Use quando a sessão está aberta a partir de `~/brains/` (pasta-mãe) e os contextos precisam estar ativos — Claude Code só auto-carrega o CLAUDE.md do cwd, não desce em subpastas.
+description: Carrega em paralelo os CLAUDE.md dos cérebros disponíveis em `~/ffos/ffos-projects/brains/` (pessoal, time, diretoria). Use quando a sessão está aberta a partir de `~/ffos/ffos-projects/brains/` (pasta-mãe) e os contextos precisam estar ativos — Claude Code só auto-carrega o CLAUDE.md do cwd, não desce em subpastas.
 ---
 
 # /cerebro — Carregamento dos cérebros disponíveis
 
-> Claude Code só carrega automaticamente o `CLAUDE.md` do diretório atual (e pastas pai). Quando a sessão é aberta em `~/brains/` (pasta-mãe), os `CLAUDE.md` dos cérebros irmãos **não** são lidos. Esta skill resolve em reads paralelos.
+> Claude Code só carrega automaticamente o `CLAUDE.md` do diretório atual (e pastas pai). Quando a sessão é aberta em `~/ffos/ffos-projects/brains/` (pasta-mãe), os `CLAUDE.md` dos cérebros irmãos **não** são lidos. Esta skill resolve em reads paralelos.
 
 ## O que faz
 
-Detecta os cérebros presentes em `~/brains/` e lê o `CLAUDE.md` de cada um (1 mensagem, N tool calls Read em paralelo):
+Detecta os cérebros presentes em `~/ffos/ffos-projects/brains/` e lê o `CLAUDE.md` de cada um (1 mensagem, N tool calls Read em paralelo):
 
 - `ariasystems-second-brain-pessoal/CLAUDE.md` — cérebro pessoal de Fabiana Furtado (agente: Aria)
 - `ariasystems-second-brain-time/CLAUDE.md` — cérebro do time (agente: Sansa)
@@ -19,13 +19,13 @@ Membros do time que só têm 1 cérebro (`ariasystems-second-brain-time`) també
 
 ## Quando rodar
 
-- **Início de sessão** em `~/brains/` se for atravessar múltiplos cérebros
+- **Início de sessão** em `~/ffos/ffos-projects/brains/` se for atravessar múltiplos cérebros
 - **Após `/clear` ou compactação**, pra reativar os contextos
 - Quando o usuário pergunta algo que pode envolver qualquer um dos cérebros e você não tem certeza do conteúdo
 
 ## Fluxo
 
-1. Detectar cérebros presentes: `ls ~/brains/ | grep -v '^\.'` (ignorar `.claude/`)
+1. Detectar cérebros presentes: `ls ~/ffos/ffos-projects/brains/ | grep -v '^\.'` (ignorar `.claude/`)
 2. Ler os `CLAUDE.md` encontrados em paralelo (1 turno, N tool calls Read)
 3. Se algum symlink estiver quebrado ou permissão falhar, reportar qual falhou e seguir com os que carregou
 4. Confirmar em **1 linha curta**, listando agente de cada cérebro:
@@ -54,9 +54,9 @@ Membros do time que só têm 1 cérebro (`ariasystems-second-brain-time`) també
 
 ## Caminhos esperados
 
-Default: `~/brains/{nome-do-cerebro}/CLAUDE.md`
+Default: `~/ffos/ffos-projects/brains/{nome-do-cerebro}/CLAUDE.md`
 
-Se a sessão foi aberta fora de `~/brains/`, usar path absoluto:
+Se a sessão foi aberta fora de `~/ffos/ffos-projects/brains/`, usar path absoluto:
 
 - `$HOME/ffos/ffos-projects/brains/ariasystems-second-brain-pessoal/CLAUDE.md`
 - `$HOME/ffos/ffos-projects/brains/ariasystems-second-brain-time/CLAUDE.md`

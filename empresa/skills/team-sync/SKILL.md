@@ -18,7 +18,7 @@ description: Distribui capturas do cérebro pessoal do diretor pros 2 cérebros 
 Os 2 cérebros coletivos devem estar clonados **lado a lado** deste:
 
 ```
-~/brains/
+~/ffos/ffos-projects/brains/
 ├── ariasystems-second-brain-time/
 ├── ariasystems-second-brain-diretoria/
 └── ariasystems-second-brain-pessoal/    ← estou aqui

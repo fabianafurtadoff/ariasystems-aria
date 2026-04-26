@@ -34,7 +34,7 @@ Modelo **minimalista** inspirado em [second-brain-amora](https://github.com/okjp
 Quando você é diretor, você opera **3 cérebros em paralelo:**
 
 ```
-~/brains/
+~/ffos/ffos-projects/brains/
 ├── ariasystems-second-brain-time/        ← cérebro do time (clonado do template-empresa)
 ├── ariasystems-second-brain-diretoria/           ← cérebro da diretoria (clonado do template-diretoria)
 └── ariasystems-second-brain-pessoal/     ← este cérebro pessoal
