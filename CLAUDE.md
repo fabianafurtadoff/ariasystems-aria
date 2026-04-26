@@ -22,10 +22,10 @@ O Claude atua como **estação de trabalho individual** de Fabiana Furtado:
 Se Fabiana Furtado é diretor da Aria Systems, recomenda-se clonar os 3 cérebros lado a lado:
 
 ```
-~/brains/
-├── ariasystems-second-brain/        (cérebro do time)
-├── ariasystems-diretoria/           (cérebro da diretoria)
-└── ariasystems-aria/     (este — pessoal)
+~/ffos/ffos-projects/brains/
+├── ariasystems-second-brain-time/        (cérebro do time)
+├── ariasystems-second-brain-diretoria/   (cérebro da diretoria)
+└── ariasystems-second-brain-pessoal/     (este — pessoal)
 ```
 
 Ao abrir **qualquer uma** dessas 3 pastas no Claude Code/Cowork, a ferramenta deve:
